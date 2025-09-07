@@ -6,3 +6,211 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.45);
+
+}
+
+/* Section 1 */
+
+.S1 {
+    width: 100%;
+    height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/S1-banner.jpeg);
+}
+
+.header {
+    width: 92%;
+
+    padding: 16px 36px;
+
+    margin-left: 57.6px;
+
+    border-radius: 12px;
+
+    /* background-color: #D9CBC2; */
+    background-color: rgba(240, 233, 233, 0.83);
+
+    position: fixed;
+    top: 12px;
+}
+
+/* 'DM Sans', 'Bungee', 'Pacifico'<< , 'Gloria Hallelujah'*/
+
+.website-title {
+    font-family: 'Gloria Hallelujah';
+    color: #011C40;
+
+    display: inline-block;
+
+    margin-right: 22px;
+
+    cursor: pointer;
+}
+
+.website-title i {
+    margin-right: 2px;
+
+    color: #A33757;
+
+    font-size: 36px;
+}
+
+.search-bar {
+    position: absolute;
+
+    width: 260px;
+    height: 36px;
+
+    background-color: rgba(250, 250, 252, 0.85);
+    
+    border-radius: 26px;
+    border: 0;
+
+    margin-top: 16px;
+
+    /* cursor: pointer; */
+
+    outline: 2.0px solid lightgray;
+
+    padding-left: 12px;
+
+    font-size: 16px;
+}
+
+.search-bar:hover {
+    border: 1.0px solid lightgray;
+}
+
+.search-icon {
+    position: absolute;
+
+    font-size: 18px;
+    
+    color: #011C40;
+    opacity: 0.85;
+
+    margin-top: 24px;
+    margin-left: 227px;
+
+    cursor: pointer;
+}
+
+.header-links {
+    list-style: none;
+    float: right;
+
+    margin-top: 22px;
+}
+
+.header-links>li {
+    display: inline;
+
+    font-size: 22px;
+    font-family: 'DM Sans';
+    font-weight: bold;
+
+    color: #011C40;
+
+    margin-right: 16px;
+}
+
+.header-links>li>a {
+    color: #011C40;
+
+    position: relative;
+    
+    padding-bottom: 6px;
+}
+
+.header-links>li>a:after {
+    position: absolute;
+    
+    content: "";
+    
+    width: 0%;
+    height: 4px;
+    
+    bottom: 0;
+    left: 0;
+    
+    background-color: #A33757;
+    
+    opacity: 0;
+}
+
+.header-links>li>a:hover:after {
+    width: 100%;
+    
+    opacity: 0.8;
+    
+    transition: 0.4s;
+}
+
+.dropdown-list {
+    position: relative;
+
+    display: inline-block;
+}
+
+.dropdown {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 2;
+    
+    width: 200px;
+    
+    padding: 8px 18px;
+
+    /* margin-top: 14px; */
+    /* margin-bottom: 5px; */
+    
+    background-color: rgba(240, 233, 233, 0.95);
+        
+    visibility: hidden;
+    
+    /* border: 4px solid #A33757; */
+    border-radius: 8px;
+    
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.dropdown li a {
+    color: #A33757;
+    
+    display: block;
+    
+    padding: 10px 0px;
+    
+    margin: 0;
+    
+    transition: color 0.4s;
+}
+
+.dropdown li a:hover {
+    color: #011C40;
+}
+
+.dropdown-list:hover .dropdown {
+    visibility: visible;
+
+    opacity: 1;
+}
+
+.dropdown li {
+    display: block;
+}
