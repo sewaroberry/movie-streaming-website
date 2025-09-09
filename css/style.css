@@ -34,7 +34,7 @@ a {
 .header {
     width: 100%;
 
-    padding: 10px 36px;
+    padding: 8px 36px;
 
     background-color: #011C40;
 
@@ -114,7 +114,7 @@ a {
     list-style: none;
     float: right;
 
-    margin-top: 22px;
+    margin-top: 21px;
 }
 
 .header-links>li {
@@ -125,8 +125,6 @@ a {
     font-weight: bold;
 
     color: #ececf3;
-
-    margin-right: 16px;
 }
 
 .header-links>li>a {
@@ -188,7 +186,7 @@ a {
 }
 
 .dropdown li a {
-    color: orange;
+    color: #011C40;
     
     display: block;
     
@@ -200,7 +198,7 @@ a {
 }
 
 .dropdown li a:hover {
-    color: #011C40;
+    color: rgb(245, 164, 13);
 }
 
 .dropdown-list:hover .dropdown {
@@ -231,7 +229,7 @@ a {
 
     color: orange;
 
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 .hero-section div {
@@ -246,9 +244,9 @@ a {
     font-size: 22px;
     font-family: 'Rubik';
 
-    letter-spacing: 2px;
+    letter-spacing: 1.7px;
 
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 }
 
 .hero-section button {
@@ -259,6 +257,8 @@ a {
 
     border: none;
     border-radius: 9px;
+
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.45);
 
     cursor: pointer;
 }
@@ -292,10 +292,111 @@ a {
 }
 
 .btn2:hover {
-    background-color: #ececf3;
+    background-color: rgb(245, 164, 13);
     color: #011C40;
 }
 
 .btn2:active {
     opacity: 0.83;
+}
+
+/* Section 2 */
+
+.S2 {
+    width: 100%;
+    height: 90.4vh;
+
+    background-color: #ececf3;
+
+    padding: 126px 0px 0px;
+}
+
+.S2 h1 {
+    font-family: 'Sacramento';
+    font-size: 70px;
+
+    text-align: center;
+
+    color: #011C40;
+
+    margin-bottom: 10px;
+}
+
+.S2 .underline {
+    width: 280px;
+    height: 8px;
+
+    border-radius: 10px;
+
+    margin: auto;
+    margin-bottom: 58px;
+
+    background-color: rgb(245, 164, 13);
+}
+
+.features-container {
+    /* overflow: auto; */
+
+    width: 1424px;
+
+    margin: auto;
+
+    /* background-color: orange; */
+}
+
+.feature-card {
+    float: left;
+
+    width: 440px;
+
+    padding: 36px 20px;
+
+    text-align: center;
+
+    border: 4px solid #011C40;
+    border-radius: 12px;
+
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+.feature-card i {
+    font-size: 46px;
+
+    margin-bottom: 18px;
+    
+    background-image: linear-gradient(120deg, #011C40, rgb(245, 164, 13));
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;
+    color: transparent;
+}
+
+.feature-card h3 {
+    font-size: 28px;
+    font-family: 'DM Sans';
+
+    margin-bottom: 8px;
+
+    color: #011C40;
+}
+
+.feature-card p {
+    font-family: 'Rubik';
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+.feature-card a {
+    font-family: 'DM Sans';
+    font-size: 22px;
+    font-weight: 500;
+
+    color: rgb(245, 164, 13);
+
+    transition: color 0.15s;
+}
+
+.feature-card a:hover {
+    color: #011C40;
 }
