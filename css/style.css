@@ -741,3 +741,64 @@ a {
 .B .dot:hover {
     background-color: #011C40;
 }
+
+/* Section Six */
+
+.S6-image {
+    width: 100%;
+    height: 66vh;
+
+    /* background-color: pink; */
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../images/S6-banner1.jpeg);
+}
+
+.S6 {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.65);
+
+    padding-top: 150px;
+}
+
+.achiv-container {
+    overflow: auto;
+    /* background-color: yellow; */
+
+    width: 852px;
+
+    margin: auto;
+}
+
+.achivement-card {
+    float: left;
+
+    /* background-color: pink; */
+
+    width: 120px;
+
+    text-align: center;
+
+    font-family: 'DM Sans';
+
+    color: #ececf3;
+}
+
+.achivement-card i {
+    font-size: 40px;
+
+    margin-bottom: 14px;
+
+    color: rgb(245, 164, 13);
+
+    transition: 0.18s;
+}
+
+.achivement-card i:hover {
+    color: #fced18;
+}
