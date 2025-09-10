@@ -802,3 +802,249 @@ a {
 .achivement-card i:hover {
     color: #fced18;
 }
+
+/* Section Seven */
+
+.S7 {
+    width: 100%;
+    overflow: auto;
+
+    padding-top: 66px;
+    padding-bottom: 56px;
+
+    background-color: #ececf3;
+}
+
+.S7 h1 {
+    font-family: 'Sacramento';
+    font-size: 56px;
+
+    text-align: center;
+
+    color: #011C40;
+
+    margin-bottom: 10px;
+}
+
+.S7 .underline {
+    width: 116px;
+    height: 6px;
+
+    border-radius: 10px;
+
+    margin: auto;
+    margin-bottom: 58px;
+
+    background-color: rgb(245, 164, 13);
+}
+
+.offers-container {
+    background-color: pink;
+
+    width: 1140px;
+
+    margin: auto;
+}
+
+.offer-card {
+    float: left;
+
+    width: 353px;
+
+    padding: 28px 20px;
+
+    text-align: center;
+
+    border: 3px solid #011C40;
+    border-radius: 12px;
+
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+.offer-card i {
+    font-size: 40px;
+
+    margin-bottom: 14px;
+    
+    background-image: linear-gradient(120deg, #011C40, rgb(245, 164, 13));
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;
+    color: transparent;
+}
+
+.offer-card h2 {
+    font-family: 'DM Sans';
+    font-size: 26px;
+
+    color: #011C40;
+
+    margin-bottom: 12px;
+}
+
+.cost {
+    box-sizing: content-box;
+
+    font-family: 'Sacramento';
+    font-size: 20px;
+    font-weight: 900;
+
+    color: #011C40;
+
+    width: 84px;
+    height: 80px;
+
+    border: 3px solid rgb(245, 164, 13);
+    border-radius: 50%;
+
+    padding: 30px 12px 0px;
+
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+.offer-card p {
+    font-size: 18px;
+    font-family: 'Rubik';
+    
+    color: rgb(60, 60, 61);
+
+    margin-bottom: 6px;
+}
+
+.offer-card button {
+    margin-top: 18px;
+
+    padding: 8px 12px;
+
+    font-size: 20px;
+    font-family: 'DM Sans';
+
+    background-color: rgb(245, 164, 13);
+    color: #011C40;
+
+    border: 2px solid #011C40;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: 0.18s;
+}
+
+.offer-card button:hover {
+    background-color: rgba(245, 164, 13, 0.57);
+}
+
+.offer-card button:active {
+    background: rgba(245, 164, 13, 0.17);
+}
+
+/* Section Eight */
+
+.S8-image {
+    width: 100%;
+    height: 66vh;
+
+    /* background-color: pink; */
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../images/S9-banner1.jpeg);
+}
+
+.S8 {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.65);
+
+    padding-top: 138px;
+}
+
+.team-container {
+    overflow: auto;
+    /* background-color: yellow; */
+
+    width: 872px;
+
+    margin: auto;
+}
+
+.team-member {
+    float: left;
+
+    /* background-color: pink; */
+
+    width: 376px;
+    height: 300px;
+
+    /* text-align: center; */
+
+    font-family: 'DM Sans';
+
+    color: #ececf3;
+}
+
+.team-member .profile-img {
+    width: 86px;
+    height: 86px;
+
+    margin-bottom: 12px;
+    margin-right: 20px;
+
+    /* border: 3px solid rgb(245, 164, 13); */
+    border-radius: 50%;
+
+    /* background-color: red; */
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    float: left;
+
+    /* color: rgb(245, 164, 13); */
+
+    transition: 0.18s;
+}
+
+.M1 {
+    background-image: url(../images/S8-photo1);
+}
+
+.M2 {
+    background-image: url(../images/S8-photo2);
+}
+
+.info-container {
+    /* background-color: red; */
+
+    overflow: auto;
+}
+
+.info {
+    /* float: left; */
+
+    /* background-color: lightblue; */
+}
+
+.info h2 {
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+.info h5 {
+    color: rgb(245, 164, 13);
+
+    margin-bottom: 8px;
+}
+
+.team-member i:hover {
+    color: #fced18;
+}
+
+.team-member p {
+    margin-left: 6px;
+}
