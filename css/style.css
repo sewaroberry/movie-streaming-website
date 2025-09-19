@@ -343,6 +343,9 @@ a {
 .feature-card {
     float: left;
 
+    position: relative;
+    z-index: 0;
+
     width: 353px;
 
     padding: 28px 20px;
@@ -353,6 +356,25 @@ a {
     border-radius: 12px;
 
     box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+.feature-card::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(77, 75, 133, 0.486);
+    opacity: 0;
+    z-index: -1;
+}
+
+.feature-card:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: 0.5s;
 }
 
 .feature-card i {
@@ -593,6 +615,28 @@ a {
     border-radius: 12px;
 
     box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+
+    position: relative;
+    z-index: 0;
+}
+
+.service-card::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(77, 75, 133, 0.486);
+    opacity: 0;
+    z-index: -1;
+}
+
+.service-card:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: 0.5s;
 }
 
 .service-card i {
@@ -623,6 +667,13 @@ a {
     margin-top: 10px;
 
     color:rgba(0, 0, 0, 0.6);
+
+    transition: 0.18s;
+}
+
+
+.service-card:hover p {
+    color: rgb(27, 26, 26);
 }
 
 /* Section Five */
@@ -859,6 +910,28 @@ a {
     border-radius: 12px;
 
     box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+
+    position: relative;
+    z-index: 0;
+}
+
+.offer-card::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(95, 94, 145, 0.349);
+    opacity: 0;
+    z-index: -1;
+}
+
+.offer-card:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: 0.5s;
 }
 
 .offer-card i {
@@ -1199,4 +1272,57 @@ a {
 
 .team-card button:active {
     background: rgba(245, 164, 13, 0.17);
+}
+
+/* Section Ten */
+
+.S10 {
+    width: 100%;
+    /* height: 360px; */
+
+    padding: 32px;
+
+    background-color: #d3d3e7;
+
+    text-align: center;
+}
+
+.footer-image {
+    background-image: url('../images/footer.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    width: 440px;
+    height: 260px;
+
+    margin: auto;
+    margin-bottom: 14px;
+
+    border-radius: 12px;
+}
+
+.icons {
+    font-size: 32px;
+    
+    color: #011C40;
+
+    margin-bottom: 8px;
+}
+
+.icons i {
+    margin-right: 6px;
+
+    cursor: pointer;
+
+    transition: 0.18s;
+}
+
+.icons i:hover {
+    color: rgb(245, 164, 13);
+}
+
+.S10 p {
+    font-family: 'Rubik';
+    font-size: 16px;
 }
